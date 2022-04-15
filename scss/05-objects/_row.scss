@@ -1,0 +1,11 @@
+@use '../02-tools/' as *;
+
+.row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    @include medium{
+        flex-direction: row;
+    }
+}

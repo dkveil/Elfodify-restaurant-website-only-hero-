@@ -1,0 +1,18 @@
+@use '../02-tools/' as *;
+
+.column{
+    width: 100%;
+    padding: 0 $font-base $font-base $font-base;
+    &--md50{
+        @include medium{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    &--lg50{
+        @include large{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+}
