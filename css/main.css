@@ -156,16 +156,16 @@ p {
 
 .container {
   margin: 0 auto;
-  width: calc(100wv - 32px);
+  width: calc(100vw - 32px);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .container {
-    width: calc(100wv - 64px);
+    width: calc(100vw - 64px);
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .container {
-    width: calc(100wv - 128px);
+    width: calc(100vw - 128px);
   }
 }
 @media screen and (min-width: 1440px) {
@@ -173,6 +173,67 @@ p {
     padding-left: 64px;
     padding-right: 64px;
     width: 1436px;
+  }
+}
+
+.image {
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 400px);
+  width: calc(100% + 1px);
+  height: calc(100% + 1px);
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  display: block;
+  z-index: -1;
+}
+@media screen and (min-width: 767px) {
+  .image {
+    top: calc(50% - 10px);
+    left: calc(50% - 300px);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .image {
+    display: none;
+  }
+}
+
+.video {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+@media screen and (min-width: 1024px) {
+  .video {
+    display: block;
+  }
+}
+
+.blackout {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.hero-home {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+}
+.hero-home__blackout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+@media screen and (min-width: 1024px) {
+  .hero-home {
+    height: calc(100vh - 48px);
+    max-height: 900px;
   }
 }
 

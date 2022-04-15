@@ -1,0 +1,21 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.hero-home{
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    &__blackout{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+    @include large{
+        height: calc(100vh - 48px);
+        max-height: 900px;
+    }
+    
+}

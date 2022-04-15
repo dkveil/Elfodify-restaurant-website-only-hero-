@@ -3,12 +3,12 @@
 
 .container{
     margin: 0 auto;
-    width: calc(100wv - 32px);
+    width: calc(100vw - 32px);
     @include medium{
-        width: calc(100wv - 64px);
+        width: calc(100vw - 64px);
     }
     @include large{
-        width: calc(100wv - 128px);
+        width: calc(100vw - 128px);
     }
     @include xxlarge{
         padding-left: 64px;
