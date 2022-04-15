@@ -16,6 +16,9 @@
     &__container{
         width: 100%;
         padding-top: $header-height;
+        @include large{
+            padding-top: $header-height-for-large;
+        }
     }
     &__content{
         position: absolute;

@@ -1,7 +1,7 @@
 @use '../01-settings/' as *;
 @use '../02-tools/' as *;
 
-.hero-home__title{
+.title{
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
     font-size: 30px;
@@ -9,6 +9,7 @@
     color: white;
     line-height: 42px;
     text-align: center;
+    text-shadow: 0 0 3px black;
     @include medium{
         text-align: left;
         font-size: 48px;

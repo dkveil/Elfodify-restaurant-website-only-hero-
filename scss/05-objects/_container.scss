@@ -2,6 +2,7 @@
 @use '../02-tools/' as *;
 
 .container{
+    height: inherit;
     margin: 0 auto;
     width: calc(100vw - 32px);
     @include medium{

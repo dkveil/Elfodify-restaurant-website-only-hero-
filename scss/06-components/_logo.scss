@@ -1,0 +1,9 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.logo{
+    font-weight: 900;
+    font-size: 24px;
+    color: $color-white;
+    text-shadow: 5px 1px rgb(49, 49, 49);
+}

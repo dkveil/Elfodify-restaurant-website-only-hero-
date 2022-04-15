@@ -1,0 +1,60 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.lang-list{
+    transition: .2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid $color-dark-blue;
+    border-radius: 10px;
+    width: 80px;
+    list-style: none;
+    text-decoration: none;
+    text-decoration: none;
+    background-color: $color-white;
+    overflow: hidden;
+
+    &__item{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        height: 40px;
+        border: 1px solid $color-dark-blue;
+        cursor: pointer;
+        color: $color-dark-blue;
+        &--used {
+            background-color: $color-blue;
+            pointer-events: none;
+            cursor: default;
+            color: white;
+        }
+    }
+    &__link{
+        // color: $color-dark-blue;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-family: 'Lato',sans-serif;
+        font-weight: 800;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+    // width: calc(100vw - 32px);
+    
+    // @include medium {
+    //     width: calc(100vw - 64px);
+    // }
+    
+    // @include large {
+    //     width: calc(100vw - 128px);
+    // }
+    
+    // @include xxlarge {
+    //     padding-left: 64px;
+    //     padding-right: 64px;
+    //     width: 1436px;
