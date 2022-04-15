@@ -1,0 +1,36 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.btn{
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 12px;
+    width: fit-content;
+    min-width: 120px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 2px;
+    &--transparent{
+        border-color: $color-white;
+        color: $color-white;
+        background-color: transparent;
+        transition: .2s;
+        &:hover{
+            background-color: rgb(0, 0, 0, .8);
+        }
+    }
+    &--white{
+        background-color: $color-white;
+        border-color: $color-white;
+        transition: .2s;
+        &:hover{
+            color: $color-white;
+            background-color: rgb(214, 214, 214, 0.7);
+            border-color: $color-white
+        }
+    }
+    
+}
