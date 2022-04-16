@@ -7,6 +7,7 @@
     height: $header-height;
     border-bottom: 1px solid $color-white;
     z-index: 33333;
+    overflow: hidden;
     @include large{
         height: $header-height-for-large;
     }
@@ -16,7 +17,10 @@
         padding-top: 10px;
         padding-bottom: 10px;
         display: flex;
-        justify-content: space-between
+        justify-content: space-between;
+        @include large{
+            // justify-content: flex-end;
+        }
     }
     &__hamburger{
         display: flex;
@@ -27,6 +31,7 @@
         width: 36px;
         cursor: pointer;
         z-index: 99;
+
     }
 
     &__center{
@@ -44,6 +49,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
     }
     &__lang-list{
         position: fixed;

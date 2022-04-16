@@ -228,6 +228,11 @@ a {
   transform: rotate(-45deg);
   top: 0;
 }
+@media screen and (min-width: 1024px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
 
 .nav {
   font-family: "lato", sans-serif;
@@ -239,15 +244,34 @@ a {
   height: 100vh;
   width: 100%;
   color: white;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.2s transform ease-out;
+  transition: 0.6s transform ease;
+}
+@media screen and (min-width: 1024px) {
+  .nav {
+    position: absolute;
+    height: 120px;
+    background-color: transparent;
+    left: 100%;
+    top: 12px;
+  }
 }
 .nav__logo {
   font-size: 44px !important;
 }
+@media screen and (min-width: 1024px) {
+  .nav__logo {
+    display: none;
+  }
+}
 .nav-list {
   margin: 32px auto;
+}
+@media screen and (min-width: 1024px) {
+  .nav-list {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+  }
 }
 .nav-list__item {
   padding-top: 8px;
@@ -256,6 +280,15 @@ a {
   font-size: 28px;
   width: fit-content;
   z-index: 99;
+}
+@media screen and (min-width: 1024px) {
+  .nav-list__item {
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 0;
+    margin: auto 4px;
+    padding: 0 4px;
+  }
 }
 .nav-list__item::before {
   transition: opacity 0.2s ease-out, transform 0.2s ease-out;
@@ -286,15 +319,30 @@ a {
   font-weight: bold;
   font-family: "Beau Rivage", cursive;
 }
+@media screen and (min-width: 1024px) {
+  .nav__address {
+    display: none;
+  }
+}
 .nav__open-col {
   display: flex;
   flex-direction: column;
   margin: 18px auto;
 }
+@media screen and (min-width: 1024px) {
+  .nav__open-col {
+    display: none;
+  }
+}
 .nav__phone-number {
   font-family: "Beau Rivage", cursive;
   font-weight: bold;
   font-size: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .nav__phone-number {
+    display: none;
+  }
 }
 
 .logo {
@@ -464,6 +512,7 @@ a {
   height: 80px;
   border-bottom: 1px solid white;
   z-index: 33333;
+  overflow: hidden;
 }
 @media screen and (min-width: 1024px) {
   .header {

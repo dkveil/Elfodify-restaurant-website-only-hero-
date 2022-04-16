@@ -1,4 +1,5 @@
 @use '../01-settings/' as *;
+@use '../02-tools/' as *;
 
 .hamburger-menu{
         cursor: pointer;
@@ -44,5 +45,8 @@
             transform: rotate(-45deg);
             top: 0;
         }
+    }
+    @include large{
+        display: none;
     }
 }
