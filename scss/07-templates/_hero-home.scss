@@ -5,6 +5,10 @@
     position: relative;
     overflow: hidden;
     height: 600px;
+    @include large{
+        height: calc(100vh - 48px);
+        min-height: 900px;
+    }
     &__blackout{
         position: absolute;
         top: 0;
@@ -15,9 +19,9 @@
     }
     &__container{
         width: 100%;
-        padding-top: $header-height;
+        margin-top: $header-height;
         @include large{
-            padding-top: $header-height-for-large;
+            margin-top: $header-height-for-large;
         }
     }
     &__content{
@@ -45,10 +49,6 @@
             margin-bottom: 0;
             margin-right: 8px;
         }
-    }
-    @include large{
-        height: calc(100vh - 48px);
-        max-height: 900px;
     }
     
 }

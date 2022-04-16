@@ -8,6 +8,7 @@
     border-bottom: 1px solid $color-white;
     z-index: 33333;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.13);
     @include large{
         height: $header-height-for-large;
     }
@@ -31,6 +32,9 @@
         width: 36px;
         cursor: pointer;
         z-index: 99;
+        @include large{
+            cursor: none;
+        }
 
     }
 
@@ -43,12 +47,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 33;
     }
 
     &__right{
         display: flex;
         justify-content: center;
         align-items: center;
+        @include large{
+            z-index: 1;
+        }
 
     }
     &__lang-list{

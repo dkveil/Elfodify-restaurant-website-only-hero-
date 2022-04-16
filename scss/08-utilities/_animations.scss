@@ -12,4 +12,14 @@
     opacity: 1;
     visibility: visible;
 }
+.is-not-active-lg{
+    @include large{
+        pointer-events: none;
+        cursor: default;
+    }
+}
 
+.is-not-active{
+    pointer-events: none;
+    cursor: default;
+}

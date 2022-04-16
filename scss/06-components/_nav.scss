@@ -16,7 +16,7 @@
         position: absolute;
         height: $header-height-for-large;
         background-color: transparent;
-        left: 100%;
+        left: 0;
         top: 12px;
     }
     &__logo{ 
@@ -39,12 +39,15 @@
             font-size: 28px;
             width: fit-content;
             z-index: 99;
+            cursor: pointer;
             @include large{
                 text-transform: uppercase;
                 font-size: 16px;
                 padding: 0;
-                margin: auto 4px;
+                margin: auto 12px;
                 padding: 0 4px;
+                width: fit-content;
+                height: 30px;
             }
             &::before{
                 transition: opacity .2s ease-out, transform .2s ease-out;
@@ -57,6 +60,9 @@
                 width: 0;
                 background-color: $color-white;
                 z-index: -1;
+                @include large{
+                    display: none;
+                }
             }
             
             &:hover{
@@ -65,14 +71,28 @@
                 z-index: 333;
                 overflow: hidden;
                 opacity: 1;
+                @include large{
+                    color: $color-white;
+                    overflow: visible;
+                    background-color: rgba(0, 0, 0, 0.25);
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+                }
                 &::before{
                     transform: translateX(100%);
                     width: 100%;
                     z-index: -1;
+                    @include large{
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        height: 8px;
+                        top: 23px;
+                    }
 
                 }
             }
         }
+
     }
     &__address{
         font-size: 24px;
@@ -92,8 +112,7 @@
         }
     }
     &__phone-number{
-        font-family: 'Beau Rivage',
-        cursive;
+        font-family: 'Beau Rivage',cursive;
         font-weight: bold;
         font-size: 30px;
         @include large {
