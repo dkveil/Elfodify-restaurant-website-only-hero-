@@ -572,7 +572,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 33;
+}
+@media screen and (min-width: 1024px) {
+  .header__logo {
+    z-index: 33;
+  }
 }
 .header__right {
   display: flex;

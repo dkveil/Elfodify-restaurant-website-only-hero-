@@ -44,7 +44,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 33;
+        @include large{
+            z-index: 33;
+        }
     }
 
     &__right{
