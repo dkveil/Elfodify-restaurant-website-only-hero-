@@ -32,9 +32,6 @@
         width: 36px;
         cursor: pointer;
         z-index: 99;
-        @include large{
-            cursor: none;
-        }
 
     }
 

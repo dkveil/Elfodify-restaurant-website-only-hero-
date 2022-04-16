@@ -563,11 +563,6 @@ a {
   cursor: pointer;
   z-index: 99;
 }
-@media screen and (min-width: 1024px) {
-  .header__hamburger {
-    cursor: none;
-  }
-}
 .header__center {
   display: flex;
   justify-content: center;
