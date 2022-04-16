@@ -57,6 +57,8 @@
     &__address{
         font-size: 24px;
         font-weight: bold;
+        font-family: 'Beau Rivage',
+        cursive;
     }
     &__open-col{
         display: flex;
@@ -64,6 +66,8 @@
         margin: 18px auto;
     }
     &__phone-number{
+        font-family: 'Beau Rivage',
+        cursive;
         font-weight: bold;
         font-size: 30px;
     }

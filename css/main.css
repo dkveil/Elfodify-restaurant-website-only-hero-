@@ -284,6 +284,7 @@ a {
 .nav__address {
   font-size: 24px;
   font-weight: bold;
+  font-family: "Beau Rivage", cursive;
 }
 .nav__open-col {
   display: flex;
@@ -291,6 +292,7 @@ a {
   margin: 18px auto;
 }
 .nav__phone-number {
+  font-family: "Beau Rivage", cursive;
   font-weight: bold;
   font-size: 30px;
 }
