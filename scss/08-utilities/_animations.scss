@@ -1,0 +1,15 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.is-hiden{
+    opacity: 0;
+}
+.is-open{
+    opacity: 1;
+    visibility: visible;
+}
+.is-visibly{
+    opacity: 1;
+    visibility: visible;
+}
+

@@ -18,14 +18,17 @@
         display: flex;
         justify-content: space-between
     }
-    
-    &__left{
+    &__hamburger{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: auto 0;
+        height: 36px;
         width: 36px;
         cursor: pointer;
+        z-index: 99;
     }
+
     &__center{
         display: flex;
         justify-content: center;
@@ -45,4 +48,5 @@
     &__lang-list{
         position: fixed;
     }
+
 }
